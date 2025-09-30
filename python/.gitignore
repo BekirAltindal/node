@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2025 Bekir Altindal <bekir.altindal@rwth-aachen.de>
+# SPDX-License-Identifier: Apache-2.0
+
 .idea
 .pytest_cache
 .venv

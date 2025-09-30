@@ -1,4 +1,6 @@
 # Maintainer: Bekir Altindal <bekir.altindal@rwth-aachen.de>
+# SPDX-FileCopyrightText: 2025 Bekir Altindal <bekir.altindal@rwth-aachen.de>
+# SPDX-License-Identifier: Apache-2.0
 
 pkgname=python-villas-node-git
 _name=${pkgname#python-villas-}
@@ -8,19 +10,25 @@ pkgdesc='Python support for the VILLASnode simulation-data gateway'
 arch=(any)
 url='https://github.com/VILLASframework/node'
 license=('Apache-2.0')
-depends=('python>=3.10'
+depends=(
+	'python>=3.10'
 	'python-linuxfd>=1.5'
 	'python-requests>=2.32.3'
-	'python-protobuf>=6.31.1')
-makedepends=(python-build
+	'python-protobuf>=6.31.1'
+)
+makedepends=(
+	python-build
 	python-installer
-	python-setuptools)
-checkdepends=('python-black>=25.1.0'
+	python-setuptools
+)
+checkdepends=(
+	'python-black>=25.1.0'
 	'python-flake8>=7.2.0'
 	'mypy>=1.15.0'
 	'python-pytest>=8.3.5'
 	'python-types-requests>=2.32.0.20250328'
-	'python-types-protobuf>=5.29.1.20250403')
+	'python-types-protobuf>=5.29.1.20250403'
+)
 source=("${pkgname}-${pkgver}::git+https://github.com/VILLASframework/${_name}.git")
 sha256sums=('SKIP')
 

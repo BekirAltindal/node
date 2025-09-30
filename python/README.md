@@ -3,7 +3,7 @@
 ## Installation on Arch Linux
 
 <details>
-  <summary><strong>Click here to read more about the release version installation</strong></summary>
+  <summary><strong>Click here if you want to install the release version</strong></summary>
   
   ```bash
   # Clone repository
@@ -21,7 +21,7 @@
 </details>
 
 <details>
-  <summary><strong>Click here to read more about the git version installation</strong></summary>
+  <summary><strong>Click here if you want to install the git version</strong></summary>
   
   ```bash
   # Clone repository

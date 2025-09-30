@@ -1,5 +1,23 @@
 # VILLASnode Python Support
 
+## Arch Linux
+
+You can install this package on Arch Linux with an AUR Helper such as yay or paru. 
+
+```
+# Download the repository
+git clone https://github.com/VILLASframework/node.git
+
+# Switch into the python folder where the PKGBUILD is located
+cd python
+
+# Build (-B) and install (-i) the PKGBUILD
+yay -Bi .
+
+# Alternatively to yay you can also use paru
+paru -Bi .
+```
+
 ## Merge two files and filter the output based on timestamps
 
 ```

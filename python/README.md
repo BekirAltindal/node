@@ -4,7 +4,7 @@
 
 You can install this package on Arch Linux with an AUR Helper such as yay or paru. 
 
-```
+```bash
 # Download the repository
 git clone https://github.com/VILLASframework/node.git
 

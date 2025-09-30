@@ -22,7 +22,7 @@ checkdepends=('python-black>=25.1.0'
 	'python-types-requests>=2.32.0.20250328'
 	'python-types-protobuf>=5.29.1.20250403')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/VILLASframework/${_name}/archive/refs/tags/v${pkgver}.tar.gz")
-#source=("${pkgname}-${pkgver}::git+https://github.com/BekirAltindal/${_name}.git")
+#source=("${pkgname}-${pkgver}::git+https://github.com/VILLASframework/${_name}.git")
 sha256sums=('SKIP')
 
 build() {

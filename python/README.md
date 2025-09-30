@@ -38,6 +38,7 @@
   ```
 </details>
 
+After the installation you can delete the cloned repository.
 
 ## Merge two files and filter the output based on timestamps
 

@@ -1,6 +1,6 @@
 # Maintainer: Bekir Altindal <bekir.altindal@rwth-aachen.de>
 
-pkgname=python-villas-node
+pkgname=python-villas-node-git
 _name=${pkgname#python-villas-}
 pkgver=1.0.1
 pkgrel=1
@@ -21,16 +21,16 @@ checkdepends=('python-black>=25.1.0'
 	'python-pytest>=8.3.5'
 	'python-types-requests>=2.32.0.20250328'
 	'python-types-protobuf>=5.29.1.20250403')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/VILLASframework/${_name}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}::git+https://github.com/VILLASframework/${_name}.git")
 sha256sums=('SKIP')
 
 build() {
-	cd ${_name}-${pkgver}/python
+	cd ${pkgname}-${pkgver}/python
 	python -m build --wheel --no-isolation
 }
 
 check() {
-	cd ${_name}-${pkgver}/python
+	cd ${pkgname}-${pkgver}/python
 	black --check --diff .
 	flake8 --exclude=*_pb2.py,*_pb2.pyi .
 	mypy .
@@ -38,6 +38,6 @@ check() {
 }
 
 package() {
-	cd ${_name}-${pkgver}/python
+	cd ${pkgname}-${pkgver}/python
 	python -m installer --destdir="$pkgdir" dist/*.whl
 }

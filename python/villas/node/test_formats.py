@@ -29,7 +29,7 @@ smp1 = Sample(
     ts_origin=Timestamp(123456780),
     ts_received=Timestamp(123456781),
     sequence=4,
-    new_frame=1,                                       # True
+    new_frame=True,
     data=[1.0, 2.0, 3.0, True, 42, sqrt(complex(-1))],
 )
 
@@ -37,7 +37,7 @@ smp2 = Sample(
     ts_origin=Timestamp(123456789),
     ts_received=Timestamp(123456790),
     sequence=5,
-    new_frame=0,                                        # False
+    new_frame=False,
     data=[1.0, 2.0, 3.0, False, 42, sqrt(complex(-1))],
 )
 

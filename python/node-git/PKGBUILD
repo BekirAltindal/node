@@ -17,6 +17,7 @@ depends=(
 	'python-protobuf>=6.31.1'
 )
 makedepends=(
+	git
 	python-build
 	python-installer
 	python-setuptools

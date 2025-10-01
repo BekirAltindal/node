@@ -10,7 +10,7 @@
   git clone https://github.com/VILLASframework/node.git
   
   # Switch into the python folder where the PKGBUILD is located
-  cd python
+  cd node/python
   
   # Build (-B) and install (-i) the PKGBUILD
   yay -Bi .
@@ -28,7 +28,7 @@
   git clone https://github.com/VILLASframework/node.git
 
   # Switch into the python folder where the git PKGBUILD is located
-  cd python/node-git
+  cd node/python/node-git
 
   # Build (-B) and install (-i) the PKGBUILD
   yay -Bi .

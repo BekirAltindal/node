@@ -27,3 +27,5 @@ python/.eggs/
 .ycm_extra_conf.py
 
 graph.dot
+
+result
